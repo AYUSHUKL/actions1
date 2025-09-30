@@ -1,0 +1,29 @@
+tions
+
+name: CI
+
+
+on:
+  push:
+  workflow_dispatch:
+
+
+jobs:
+  
+  first_job:
+    
+    runs-on: ubuntu-latest
+
+    steps:
+      #- uses: actions/checkout@v4
+
+      # Runs a single command using the runners shell
+      - name: Welcome Message
+        run: echo "Hello Owrld"
+
+      # Runs a set of commands using the runners shell
+      - name: List files on repo
+        run: ls
+
+      - name: read fikle
+        run: cat Readme
