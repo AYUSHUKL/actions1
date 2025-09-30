@@ -9,3 +9,6 @@ jobs:
     steps:
     - name: create a text file
       run: echo "hello, world!" > hello.txt
+    - name: read file
+      run: cat hello.txt:wq
+      
